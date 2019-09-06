@@ -34,6 +34,15 @@
       background-color: $color-white;
     }
   }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    
+    &::after {
+      background-color: $color-primary;
+    }
+  }
   
   &::after {
     content: "";
@@ -59,6 +68,8 @@
 .btn-text {
   &:link,
   &:visited {
+    display: block;
+    padding: 1rem;
     font-size: $default-font-size;
     color: $color-primary;
     display: inline-block;
