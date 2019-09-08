@@ -1,5 +1,5 @@
 # float-layout-and-css-architecture
-Build css architecturue using sass
+Build css architecture using sass
 
 ## Implementation
   1. Create float grid layout without using Bootstrap
