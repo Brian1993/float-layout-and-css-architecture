@@ -1,4 +1,4 @@
-# float-layout-and-css-architecturue
+# float-layout-and-css-architecture
 Build css architecturue using sass
 
 ## Implementation
