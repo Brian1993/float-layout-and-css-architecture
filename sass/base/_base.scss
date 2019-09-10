@@ -22,11 +22,6 @@ html {
   @include respond ($tablet-portrait) {
     font-size: base-font-size(8px);
   }
-
-  // @include respond ($phone) {
-  //   font-size: base-font-size(7px);
-  // }
-
 } 
 
 body {
