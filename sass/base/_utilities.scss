@@ -8,10 +8,18 @@
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+
+  @include respond ($tablet-portrait) {
+    margin-bottom: 2rem !important;
+  }
 }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
+
+  @include respond ($tablet-portrait) {
+    margin-bottom: 6rem !important;
+  }
 }
 
 .u-margin-top-small {
@@ -20,6 +28,10 @@
 
 .u-margin-top-big {
   margin-top: 8rem !important;
+
+  @include respond ($tablet-portrait) {
+    margin-top: 6rem !important;
+  }
 }
 
 .u-margin-top-huge {

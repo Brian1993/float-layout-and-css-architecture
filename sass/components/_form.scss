@@ -3,6 +3,12 @@
     margin-bottom: 2rem; 
   }
 
+  @include respond($phone) {
+    &__group {
+      text-align: center;
+    }
+  }
+
   &__input {
     font-size: 1.5rem;
     width: 80%;
@@ -29,6 +35,11 @@
     &:focus:invalid {
       border-bottom: 3px solid $color-secondary-dark;
     }
+
+    @include respond ($tablet-portrait) {
+      width: 100%;
+    }
+  
   }
 
   &__label {
@@ -56,6 +67,15 @@
   &__radio-group {
     width: 49%;
     display: inline-block; 
+
+    @include respond ($tablet-portrait) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    @include respond ($phone) {
+      transform: translateX(-10rem);
+    }
   }
 
   &__radio-input {
@@ -89,6 +109,10 @@
       @include absolute-center;
       opacity: 0;
       transition: opacity .2s;
+    }
+
+    @include respond ($tablet-portrait) {
+      top: -.7rem;
     }
   }
 

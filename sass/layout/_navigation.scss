@@ -15,18 +15,46 @@
     box-shadow: 0 1rem 3rem rgba($color: $color-black, $alpha: .1);
     text-align: center;
     cursor: pointer;
+
+    @include respond ($tablet-portrait) {
+      height: 5rem;
+      width: 5rem;
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond ($phone) {
+      height: 5rem;
+      width: 5rem;
+      top: 2rem;
+      right: 2rem;
+    } 
   }
 
   &__background {
-    height: 6rem;
-    width: 6rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
+    top: 6rem;
+    right: 6rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
     transition: all .5s cubic-bezier(1,-0.21,.01,1.09);
+
+    @include respond ($tablet-portrait) {
+      height: 5rem;
+      width: 5rem;
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond ($phone) {
+      height: 5rem;
+      width: 5rem;
+      top: 2rem;
+      right: 2rem;
+    } 
   }
 
   &__nav {
@@ -94,6 +122,11 @@
   &__icon {
     position: relative;
     margin-top: 3.5rem;
+
+    @include respond($tablet-portrait) {
+      margin-top: 2.5rem;
+    }
+    
     &,
     &::before,
     &::after {
@@ -102,6 +135,11 @@
       background-color: $color-grey-dark-3;
       display: inline-block;
       transition: all .5s cubic-bezier(1,-0.21,.01,1.09);
+
+      @include respond($tablet-portrait) {
+        width: 2.5rem;
+      }
+
     }
 
     &::before,
@@ -111,8 +149,11 @@
       left: 0;
     }
 
-    &::before { top: -.8rem; }
-    &::after { top: .8rem; }
+    &::before { 
+      top: -.8rem; 
+    }
+    &::after { 
+      top: .8rem; }
   }
 
   &__button:hover &__icon::before {
